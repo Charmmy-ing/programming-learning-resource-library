@@ -1,31 +1,40 @@
-/* 极简样式 */
+/* 极简学生风：白底深灰文，留白充足 */
 * { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: "PingFang SC", "Microsoft YaHei", sans-serif; background: #f7f8fa; color: #333; line-height: 1.7; }
-header { background: #2c3e50; color: #fff; padding: 40px 20px; text-align: center; }
-header h1 { font-size: 28px; margin-bottom: 8px; }
-header p { opacity: .85; font-size: 14px; }
-nav { background: #34495e; padding: 10px; text-align: center; position: sticky; top: 0; z-index: 10; }
-nav a { color: #fff; text-decoration: none; padding: 6px 16px; font-size: 14px; border-radius: 4px; }
-nav a:hover { background: #2c3e50; }
-main { max-width: 1100px; margin: 0 auto; padding: 20px; }
-section { margin: 30px 0; }
-h2 { font-size: 22px; border-left: 4px solid #3498db; padding-left: 12px; margin-bottom: 16px; }
-.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 14px; }
-.card { background: #fff; border-radius: 8px; padding: 16px; box-shadow: 0 1px 4px rgba(0,0,0,.08); }
+body { font-family: "PingFang SC", "Microsoft YaHei", sans-serif; background: #fff; color: #333; line-height: 1.8; }
+header { text-align: center; padding: 56px 20px 32px; border-bottom: 1px solid #eee; }
+header h1 { font-size: 30px; letter-spacing: 1px; }
+header .slogan { margin-top: 10px; color: #888; font-size: 15px; }
+nav { display: flex; justify-content: center; gap: 6px; padding: 14px 10px; border-bottom: 1px solid #eee; position: sticky; top: 0; background: #fff; z-index: 10; flex-wrap: wrap; }
+nav a { color: #555; text-decoration: none; padding: 6px 14px; font-size: 14px; border-radius: 20px; }
+nav a:hover { background: #f0f0f0; color: #222; }
+main { max-width: 960px; margin: 0 auto; padding: 32px 20px; }
+section { margin: 40px 0; }
+h2 { font-size: 21px; padding-bottom: 10px; border-bottom: 1px solid #eee; margin-bottom: 20px; }
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); gap: 14px; }
+.card { background: #fafafa; border: 1px solid #eee; border-radius: 10px; padding: 18px; }
 .card h3 { font-size: 16px; margin-bottom: 6px; }
-.card p { font-size: 13px; color: #666; }
-.card a { display: inline-block; margin-top: 8px; color: #3498db; text-decoration: none; font-size: 13px; }
+.card p { font-size: 13.5px; color: #666; }
+.card a { display: inline-block; margin-top: 10px; color: #4a90d9; text-decoration: none; font-size: 13.5px; }
 .card a:hover { text-decoration: underline; }
-.lang-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 14px; }
-.lang-card { background: #fff; border-radius: 8px; padding: 20px; text-align: center; box-shadow: 0 1px 4px rgba(0,0,0,.08); }
-.lang-card h3 { font-size: 18px; margin-bottom: 8px; }
-.lang-card a { color: #3498db; text-decoration: none; font-size: 13px; }
-.res-group { margin-bottom: 20px; }
-.res-group h3 { font-size: 17px; margin-bottom: 10px; color: #2c3e50; }
+.lang-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 14px; }
+.lang-card { background: #fafafa; border: 1px solid #eee; border-radius: 10px; padding: 20px; text-align: center; }
+.lang-card h3 { font-size: 17px; margin-bottom: 6px; }
+.lang-card p { font-size: 13px; color: #666; }
+.lang-card a { display: inline-block; margin-top: 8px; color: #4a90d9; text-decoration: none; font-size: 13px; }
+.lang-card a:hover { text-decoration: underline; }
+.lang-card a + a { margin-left: 10px; }
+.res-group { margin-bottom: 26px; }
+.res-group h3 { font-size: 16px; margin-bottom: 10px; }
 .res-group ul { list-style: none; }
-.res-group li { background: #fff; border-radius: 6px; padding: 10px 14px; margin-bottom: 8px; box-shadow: 0 1px 3px rgba(0,0,0,.06); }
-.res-group a { color: #3498db; text-decoration: none; font-weight: 500; }
+.res-group li { background: #fafafa; border: 1px solid #eee; border-radius: 8px; padding: 10px 14px; margin-bottom: 8px; }
+.res-group a { color: #4a90d9; text-decoration: none; font-weight: 500; font-size: 14px; }
 .res-group a:hover { text-decoration: underline; }
-.res-group .desc { font-size: 13px; color: #666; margin-top: 2px; }
-footer { background: #2c3e50; color: #aaa; text-align: center; padding: 20px; margin-top: 40px; font-size: 13px; }
-footer a { color: #8ab4f8; text-decoration: none; }
+.res-group .desc { font-size: 12.5px; color: #888; margin-top: 2px; }
+footer { text-align: center; padding: 28px 20px; border-top: 1px solid #eee; color: #999; font-size: 13px; }
+footer a { color: #4a90d9; text-decoration: none; }
+#disclaimer .card { background: #fffbea; border-color: #f0e0a0; }
+@media (max-width: 600px) {
+  header h1 { font-size: 24px; }
+  nav a { padding: 5px 10px; font-size: 13px; }
+  main { padding: 20px 14px; }
+}
