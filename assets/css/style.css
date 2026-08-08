@@ -1,0 +1,31 @@
+/* 极简样式 */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: "PingFang SC", "Microsoft YaHei", sans-serif; background: #f7f8fa; color: #333; line-height: 1.7; }
+header { background: #2c3e50; color: #fff; padding: 40px 20px; text-align: center; }
+header h1 { font-size: 28px; margin-bottom: 8px; }
+header p { opacity: .85; font-size: 14px; }
+nav { background: #34495e; padding: 10px; text-align: center; position: sticky; top: 0; z-index: 10; }
+nav a { color: #fff; text-decoration: none; padding: 6px 16px; font-size: 14px; border-radius: 4px; }
+nav a:hover { background: #2c3e50; }
+main { max-width: 1100px; margin: 0 auto; padding: 20px; }
+section { margin: 30px 0; }
+h2 { font-size: 22px; border-left: 4px solid #3498db; padding-left: 12px; margin-bottom: 16px; }
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 14px; }
+.card { background: #fff; border-radius: 8px; padding: 16px; box-shadow: 0 1px 4px rgba(0,0,0,.08); }
+.card h3 { font-size: 16px; margin-bottom: 6px; }
+.card p { font-size: 13px; color: #666; }
+.card a { display: inline-block; margin-top: 8px; color: #3498db; text-decoration: none; font-size: 13px; }
+.card a:hover { text-decoration: underline; }
+.lang-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 14px; }
+.lang-card { background: #fff; border-radius: 8px; padding: 20px; text-align: center; box-shadow: 0 1px 4px rgba(0,0,0,.08); }
+.lang-card h3 { font-size: 18px; margin-bottom: 8px; }
+.lang-card a { color: #3498db; text-decoration: none; font-size: 13px; }
+.res-group { margin-bottom: 20px; }
+.res-group h3 { font-size: 17px; margin-bottom: 10px; color: #2c3e50; }
+.res-group ul { list-style: none; }
+.res-group li { background: #fff; border-radius: 6px; padding: 10px 14px; margin-bottom: 8px; box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+.res-group a { color: #3498db; text-decoration: none; font-weight: 500; }
+.res-group a:hover { text-decoration: underline; }
+.res-group .desc { font-size: 13px; color: #666; margin-top: 2px; }
+footer { background: #2c3e50; color: #aaa; text-align: center; padding: 20px; margin-top: 40px; font-size: 13px; }
+footer a { color: #8ab4f8; text-decoration: none; }

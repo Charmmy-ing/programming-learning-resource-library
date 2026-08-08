@@ -1,0 +1,51 @@
+{
+  "c": [
+    {"name": "菜鸟教程 C 语言", "desc": "中文入门教程，语法示例齐全", "url": "https://www.runoob.com/cprogramming/c-tutorial.html"},
+    {"name": "C 语言中文网", "desc": "C 语言系统教程与实战案例", "url": "http://c.biancheng.net/c/"},
+    {"name": "cppreference C 参考", "desc": "官方 C 标准库权威参考（中文）", "url": "https://zh.cppreference.com/w/c"},
+    {"name": "GeeksforGeeks C", "desc": "英文 C 语言教程与算法题解", "url": "https://www.geeksforgeeks.org/c-programming-language/"},
+    {"name": "LeetCode 题库", "desc": "经典刷题平台，支持 C 语言", "url": "https://leetcode.cn/problemset/"},
+    {"name": "洛谷", "desc": "国内 OJ 刷题平台，适合竞赛入门", "url": "https://www.luogu.com.cn/"},
+    {"name": "C 语言中文社区", "desc": "问答社区，解决 C 语言问题", "url": "https://www.c-cpp.com/"},
+    {"name": "Programiz C", "desc": "可视化 C 语言交互式教程", "url": "https://www.programiz.com/c-programming"}
+  ],
+  "cpp": [
+    {"name": "菜鸟教程 C++", "desc": "中文 C++ 入门教程", "url": "https://www.runoob.com/cplusplus/cpp-tutorial.html"},
+    {"name": "cppreference C++ 参考", "desc": "C++ 标准库权威中文参考", "url": "https://zh.cppreference.com/w/cpp"},
+    {"name": "C++ Primer 学习笔记", "desc": "经典教材配套学习资源", "url": "https://www.cppprimer.com/"},
+    {"name": "learncpp.com", "desc": "英文免费 C++ 系统性教程", "url": "https://www.learncpp.com/"},
+    {"name": "GeeksforGeeks C++", "desc": "英文 C++ 教程与例题", "url": "https://www.geeksforgeeks.org/c-plus-plus/"},
+    {"name": "OpenJudge", "desc": "北京大学 OJ，C/C++ 刷题", "url": "http://openjudge.cn/"},
+    {"name": "HDU Online Judge", "desc": "杭电 OJ，经典训练题库", "url": "http://acm.hdu.edu.cn/"},
+    {"name": "Codeforces", "desc": "国际竞赛平台，C++ 为主", "url": "https://codeforces.com/"}
+  ],
+  "java": [
+    {"name": "菜鸟教程 Java", "desc": "中文 Java 入门教程", "url": "https://www.runoob.com/java/java-tutorial.html"},
+    {"name": "Java 官方文档（中文）", "desc": "Oracle 官方 Java 教程", "url": "https://docs.oracle.com/javase/tutorial/"},
+    {"name": "廖雪峰 Java 教程", "desc": "免费 Java 实战中文教程", "url": "https://liaoxuefeng.com/books/java/introduction/"},
+    {"name": "Java 全栈知识体系", "desc": "Java 学习路线与面试知识", "url": "https://pdai.tech/"},
+    {"name": "How2J 教程", "desc": "Java 入门到进阶中文教程", "url": "https://how2j.cn/"},
+    {"name": "LeetCode 题库", "desc": "Java 刷题主流平台", "url": "https://leetcode.cn/problemset/"},
+    {"name": "牛客网", "desc": "Java 刷题与面试题库", "url": "https://www.nowcoder.com/"},
+    {"name": "码出高效 Java 手册", "desc": "阿里巴巴 Java 开发规范", "url": "https://github.com/alibaba/p3c"}
+  ],
+  "web": [
+    {"name": "MDN Web 文档", "desc": "HTML/CSS/JS 官方权威文档（中文）", "url": "https://developer.mozilla.org/zh-CN/"},
+    {"name": "菜鸟教程 HTML", "desc": "中文 HTML 入门教程", "url": "https://www.runoob.com/html/html-tutorial.html"},
+    {"name": "菜鸟教程 CSS", "desc": "中文 CSS 教程", "url": "https://www.runoob.com/css/css-tutorial.html"},
+    {"name": "菜鸟教程 JavaScript", "desc": "中文 JS 教程", "url": "https://www.runoob.com/js/js-tutorial.html"},
+    {"name": "Vue.js 官方文档", "desc": "Vue 3 中文官方文档", "url": "https://cn.vuejs.org/"},
+    {"name": "freeCodeCamp", "desc": "免费前端交互式学习平台", "url": "https://www.freecodecamp.org/chinese/"},
+    {"name": "CodePen", "desc": "前端代码在线演示工具", "url": "https://codepen.io/"}
+  ],
+  "tools": [
+    {"name": "Visual Studio Code", "desc": "免费开源轻量编辑器，全语言", "url": "https://code.visualstudio.com/"},
+    {"name": "IntelliJ IDEA Community", "desc": "JetBrains 免费社区版 IDE", "url": "https://www.jetbrains.com/idea/download/"},
+    {"name": "Visual Studio Community", "desc": "微软免费 C/C++ IDE", "url": "https://visualstudio.microsoft.com/"},
+    {"name": "Dev-C++", "desc": "轻量免费 C/C++ 开发工具", "url": "https://www.bloodshed.net/"},
+    {"name": "Git", "desc": "分布式版本控制系统", "url": "https://git-scm.com/"},
+    {"name": "GitHub Desktop", "desc": "GitHub 官方图形化客户端", "url": "https://desktop.github.com/"},
+    {"name": "XMind", "desc": "思维导图工具，学习笔记常用", "url": "https://xmind.cn/"},
+    {"name": "MySQL Community", "desc": "开源数据库", "url": "https://dev.mysql.com/downloads/"}
+  ]
+}
