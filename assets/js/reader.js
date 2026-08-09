@@ -4,6 +4,13 @@ const file = params.get('file');
 const contentEl = document.getElementById('content');
 const tocEl = document.getElementById('toc');
 
+// 下载按钮：GitHub 公共仓库直链
+if (file) {
+  const dl = document.getElementById('dl-btn');
+  dl.href = 'https://github.com/Charmmy-ing/programming-learning-resource-library/raw/main/' + encodeURI(file);
+  document.getElementById('reader-title').textContent = file.split('/').pop();
+}
+
 marked.setOptions({
   highlight: function (code, lang) {
     if (lang && hljs.getLanguage(lang)) {

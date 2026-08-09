@@ -1,7 +1,13 @@
 /* 笔记阅读页样式 */
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body { font-family: "PingFang SC", "Microsoft YaHei", sans-serif; background: #fff; color: #333; }
-.reader-wrap { display: flex; max-width: 1200px; margin: 0 auto; min-height: 100vh; }
+.reader-bar { display: flex; align-items: center; gap: 14px; max-width: 1200px; margin: 0 auto; padding: 16px 24px; border-bottom: 1px solid #f2f3f5; position: sticky; top: 0; background: rgba(255,255,255,.95); backdrop-filter: blur(8px); z-index: 20; }
+.reader-title { flex: 1; font-size: 14px; color: #6b7280; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.reader-bar .btn { display: inline-block; padding: 6px 16px; border-radius: 8px; font-size: 13px; border: 1px solid #d8dce3; color: #4b5563; text-decoration: none; background: #fff; font-weight: 500; transition: all .2s; }
+.reader-bar .btn:hover { border-color: #4a5bd9; color: #4a5bd9; }
+.reader-bar .btn-primary { background: #4a5bd9; border-color: #4a5bd9; color: #fff; }
+.reader-bar .btn-primary:hover { background: #3d4cc0; color: #fff; }
+.reader-wrap { display: flex; max-width: 1200px; margin: 0 auto; min-height: calc(100vh - 60px); }
 .toc { width: 220px; flex-shrink: 0; padding: 24px 16px; border-right: 1px solid #eee; position: sticky; top: 0; height: 100vh; overflow-y: auto; font-size: 13px; }
 .toc h4 { font-size: 13px; color: #999; margin-bottom: 10px; }
 .toc a { display: block; color: #555; text-decoration: none; padding: 4px 8px; border-radius: 4px; }
