@@ -24,7 +24,7 @@ function renderNotes() {
   ];
   document.getElementById('method-cards').innerHTML = items.map(i => `
     <div class="card"><h3>${i.name}</h3><p>${i.desc}</p>
-    <a href="${i.file}" target="_blank">看看 →</a></div>`).join('');
+    <a href="reader.html?file=${encodeURIComponent(i.file)}">看看 →</a></div>`).join('');
 }
 
 function renderTools() {

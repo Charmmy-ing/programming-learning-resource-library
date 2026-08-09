@@ -1,4 +1,4 @@
-﻿#define _CRT_SECURE_NO_WARNINGS
+﻿// 用 VS 写 C 的老习惯了，先关个安全警告
 #include<stdio.h>
 #include<stdlib.h>
 void input1(int *);

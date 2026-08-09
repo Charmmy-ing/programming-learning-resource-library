@@ -1,0 +1,17 @@
+/* 笔记阅读页样式 */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: "PingFang SC", "Microsoft YaHei", sans-serif; background: #fff; color: #333; }
+.reader-wrap { display: flex; max-width: 1200px; margin: 0 auto; min-height: 100vh; }
+.toc { width: 220px; flex-shrink: 0; padding: 24px 16px; border-right: 1px solid #eee; position: sticky; top: 0; height: 100vh; overflow-y: auto; font-size: 13px; }
+.toc h4 { font-size: 13px; color: #999; margin-bottom: 10px; }
+.toc a { display: block; color: #555; text-decoration: none; padding: 4px 8px; border-radius: 4px; }
+.toc a:hover { background: #f0f0f0; }
+.toc a.lv2 { padding-left: 16px; }
+.toc a.lv3 { padding-left: 28px; }
+.markdown-body { flex: 1; padding: 40px 48px; max-width: 860px; }
+.markdown-body h1 { padding-bottom: 12px; border-bottom: 1px solid #eee; }
+.markdown-body pre { border-radius: 8px; padding: 14px 16px; }
+@media (max-width: 700px) {
+  .toc { display: none; }
+  .markdown-body { padding: 24px 16px; }
+}
