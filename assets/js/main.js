@@ -66,7 +66,7 @@ function renderVersion() {
 
 function renderDisclaimer() {
   document.getElementById('disclaimer-content').innerHTML = `
-    <p>本仓库只是俺一个普通在校大学生自学沉淀的资料，无偿开源分享给同学们参考。</p>
+    <p>本仓库只是我作为一名普通在校大学生自学沉淀的资料，无偿开源分享给同学们参考。</p>
     <p style="margin-top:8px;">🙏 仅供自学交流使用，<strong>禁止任何商用倒卖</strong>，一起学习一起进步！</p>`;
 }
 
@@ -78,3 +78,11 @@ renderNotes();
 renderTools();
 renderVersion();
 renderDisclaimer();
+
+// 滚动渐入轻动效
+const io = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('show'); io.unobserve(e.target); }
+  });
+}, { threshold: 0.08 });
+document.querySelectorAll('.card, .lang-card').forEach(el => io.observe(el));
