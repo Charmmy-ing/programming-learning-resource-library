@@ -12,7 +12,7 @@ function renderLangCards() {
       <h3>${l.name}</h3>
       <p>${l.desc}</p>
       <p style="font-size:12px;color:#bbb;margin-top:6px;">${l.count ? '源码副本 ' + l.count + ' 个' : ''}</p>
-      ${l.notes ? `<a href="${l.notes}/">笔记</a>` : ''}
+      ${l.notes ? `<a href="reader.html?file=${encodeURIComponent(l.notes + '/README.md')}">笔记</a>` : ''}
       ${l.src ? `<a href="${l.src}/">源码</a>` : ''}
     </div>`).join('');
 }
