@@ -28,6 +28,8 @@ h2::after { content: ''; flex: 1; height: 1px; background: #f2f3f5; }
 /* 文档条目 */
 .doc-list { margin-top: 12px; border-top: 1px solid #f5f6f8; padding-top: 8px; }
 .doc-item { display: flex; justify-content: space-between; align-items: center; padding: 7px 0; border-bottom: 1px dashed #f5f6f8; font-size: 13px; color: #374151; flex-wrap: wrap; gap: 6px; }
+.file-link { color: #1f2329; text-decoration: none; font-weight: 500; transition: color .2s; }
+.file-link:hover { color: #4a5bd9; text-decoration: underline; }
 .doc-actions { display: inline-flex; gap: 6px; }
 
 /* 按钮 */

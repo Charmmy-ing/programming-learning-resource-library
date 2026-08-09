@@ -3,9 +3,13 @@
 const GH_RAW = 'https://raw.githubusercontent.com/Charmmy-ing/programming-learning-resource-library/main/';
 const GH_DL = 'https://github.com/Charmmy-ing/programming-learning-resource-library/raw/main/';
 
-// 下载按钮通用函数
+// 下载按钮通用函数（蓝色）
 function dlBtn(file, label) {
-  return `<a class="btn" href="${GH_DL}${encodeURI(file)}" download>${label}</a>`;
+  return `<a class="btn btn-primary" href="${GH_DL}${encodeURI(file)}" download>${label}</a>`;
+}
+// 可点击文件名超链接（点击即下载）
+function fileNameLink(file, name) {
+  return `<a class="file-link" href="${GH_DL}${encodeURI(file)}" download title="点击下载 ${name}">${name}</a>`;
 }
 function previewBtn(file, label) {
   return `<a class="btn btn-primary" href="reader.html?file=${encodeURI(file)}">${label}</a>`;
@@ -54,7 +58,7 @@ function renderLangCards() {
       <p>${l.desc}</p>
       <p style="font-size:12px;color:#bbb;margin:8px 0;">${l.count ? '收录源码 ' + l.count + ' 个' : ''}</p>
       <div class="doc-list">
-        ${l.docs.map(d => `<div class="doc-item"><span>${d.name}</span>
+        ${l.docs.map(d => `<div class="doc-item">${fileNameLink(d.file, d.name)}
           <span class="doc-actions">${previewBtn(d.file, '预览')}${dlBtn(d.file, '下载')}</span></div>`).join('')}
       </div>
       ${l.src ? `<p style="margin-top:10px;"><a class="btn" href="${GH_DL}${l.src}/" target="_blank">浏览全部源码</a></p>` : ''}
