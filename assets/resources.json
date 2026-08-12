@@ -15,9 +15,7 @@
     {"name": "learncpp.com", "desc": "英文系统教程，零基础也能懂", "url": "https://www.learncpp.com/"},
     {"name": "GeeksforGeeks C++", "desc": "英文教程+经典例题", "url": "https://www.geeksforgeeks.org/c-plus-plus/"},
     {"name": "OpenJudge", "desc": "北大 OJ，课内题刷起来", "url": "http://openjudge.cn/"},
-    {"name": "HDU Online Judge", "desc": "杭电 OJ，经典训练场", "url": "http://acm.hdu.edu.cn/"},
-    {"name": "Codeforces", "desc": "国际竞赛平台，大佬聚集地", "url": "https://codeforces.com/"},
-    {"name": "C++ Primer 笔记站", "desc": "经典教材配套学习笔记", "url": "https://www.cppprimer.com/"}
+    {"name": "Codeforces", "desc": "国际竞赛平台，大佬聚集地", "url": "https://codeforces.com/"}
   ],
   "java": [
     {"name": "菜鸟教程 Java", "desc": "中文入门，语法速查方便", "url": "https://www.runoob.com/java/java-tutorial.html"},
@@ -41,7 +39,6 @@
     {"name": "Visual Studio Code", "desc": "免费开源轻量编辑器，全语言通吃", "url": "https://code.visualstudio.com/"},
     {"name": "IntelliJ IDEA Community", "desc": "Java IDE 免费社区版，真香", "url": "https://www.jetbrains.com/idea/download/"},
     {"name": "Visual Studio Community", "desc": "微软免费 IDE，C/C++ 作业神器", "url": "https://visualstudio.microsoft.com/"},
-    {"name": "Dev-C++", "desc": "轻量免费，写作业够用", "url": "https://www.bloodshed.net/"},
     {"name": "Git", "desc": "版本控制必学，代码保险箱", "url": "https://git-scm.com/"},
     {"name": "GitHub Desktop", "desc": "GitHub 官方图形客户端，省心", "url": "https://desktop.github.com/"},
     {"name": "XMind", "desc": "思维导图工具，理思路专用", "url": "https://xmind.cn/"},

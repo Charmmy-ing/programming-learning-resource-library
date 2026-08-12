@@ -17,7 +17,12 @@
   <a href="#resource">自学宝藏网站</a>
   <a href="#disclaimer">使用声明</a>
 </nav>
+<div class="search-wrap">
+  <input id="site-search" type="text" placeholder="🔍 搜资源、搜网站，比如：JVM / 数据结构 / LeetCode" autocomplete="off">
+  <span id="search-count" class="search-count"></span>
+</div>
 <main>
+  <div id="search-empty" class="search-empty" style="display:none">没有找到相关内容，换个关键词试试～</div>
   <section id="lang">
     <h2>💻 自学分区</h2>
     <div class="lang-grid" id="lang-cards"></div>
@@ -42,6 +47,7 @@
 <footer>
   <p>本站资源仅供学习交流使用 · 禁止商用倒卖 · 由热爱编程的在校学生维护</p>
 </footer>
+<button id="back-top" class="back-top" title="回到顶部" aria-label="回到顶部">↑</button>
 <script src="assets/js/main.js"></script>
 </body>
 </html>

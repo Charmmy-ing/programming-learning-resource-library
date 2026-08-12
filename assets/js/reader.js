@@ -1,3 +1,12 @@
+// 阅读进度条：跟着滚动走
+const prog = document.getElementById('read-progress');
+window.addEventListener('scroll', () => {
+  const h = document.documentElement;
+  const pct = h.scrollHeight > h.clientHeight
+    ? (h.scrollTop / (h.scrollHeight - h.clientHeight)) * 100 : 0;
+  prog.style.width = pct + '%';
+}, { passive: true });
+
 // 笔记阅读器：marked + highlight.js 渲染 + 目录
 const params = new URLSearchParams(location.search);
 const file = params.get('file');

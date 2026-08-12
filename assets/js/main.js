@@ -112,8 +112,8 @@ function renderTools() {
 
 // 宝藏网站
 function renderResources(data) {
-  const c = data.c.filter(x => x.url !== 'http://acm.hdu.edu.cn/').slice(0, 5);
-  const cpp = data.cpp.filter(x => x.url !== 'https://www.cppprimer.com/').slice(0, 3);
+  const c = data.c.slice(0, 5);
+  const cpp = data.cpp.slice(0, 3);
   const java = data.java.slice(0, 6);
   const web = data.web.slice(0, 5);
   document.getElementById('resource-groups').innerHTML = [
@@ -151,3 +151,51 @@ const io = new IntersectionObserver(entries => {
   });
 }, { threshold: 0.08 });
 document.querySelectorAll('.card, .lang-card').forEach(el => io.observe(el));
+
+// 全站搜索：过滤宝藏网站 + 文档列表
+const searchInput = document.getElementById('site-search');
+const searchCount = document.getElementById('search-count');
+
+function applyFilter(kw) {
+  kw = kw.trim().toLowerCase();
+  let hit = 0;
+  // 宝藏网站条目
+  document.querySelectorAll('.res-group').forEach(g => {
+    let gHit = 0;
+    g.querySelectorAll('li').forEach(li => {
+      const show = !kw || li.textContent.toLowerCase().includes(kw);
+      li.style.display = show ? '' : 'none';
+      if (show) gHit++;
+    });
+    g.style.display = gHit ? '' : 'none';
+    hit += gHit;
+  });
+  // 自学分区文档条目
+  document.querySelectorAll('.lang-card').forEach(card => {
+    let cHit = 0;
+    card.querySelectorAll('.doc-item').forEach(item => {
+      const show = !kw || item.textContent.toLowerCase().includes(kw);
+      item.style.display = show ? '' : 'none';
+      if (show) cHit++;
+    });
+    card.style.display = cHit ? '' : 'none';
+    hit += cHit;
+  });
+  // 方法 + 工具卡片
+  document.querySelectorAll('#method .card, #tools .card').forEach(card => {
+    const show = !kw || card.textContent.toLowerCase().includes(kw);
+    card.style.display = show ? '' : 'none';
+    if (show) hit++;
+  });
+  searchCount.textContent = kw ? `找到 ${hit} 条` : '';
+  const none = document.getElementById('search-empty');
+  if (none) none.style.display = (kw && hit === 0) ? '' : 'none';
+}
+searchInput.addEventListener('input', () => applyFilter(searchInput.value));
+
+// 回到顶部
+const backTop = document.getElementById('back-top');
+window.addEventListener('scroll', () => {
+  backTop.classList.toggle('show', window.scrollY > 400);
+}, { passive: true });
+backTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
